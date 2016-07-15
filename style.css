@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+button, select {
+    color: rebeccapurple;
+    font: 20px "Impact";
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 1px 5px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+select option {
+    color: rebeccapurple;
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.button-block {
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,40 @@
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Life</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+	<canvas id="canvas"></canvas>
+	<div class="button-block">
+		<button id="run">Run</button>
+		<button id="stop">Stop</button>
+		<button id="random">Random</button>
+		<button id="clear">Clear</button>
+		<button id="clock">Clock</button>
+		<!--
+		<select>
+			<option id="clock">Clock</option>
+			<option id="planer">Planer</option>
+			<option>llll</option>
+		</select>
+		-->
+	</div>
+	<script>
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	ctx.fillStyle = "rebeccapurple";
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+	canvas.height = h;
+	canvas.width = w;
+	ctx.fillStyle = "rebeccapurple";
+	ctx.fillRect(0, 0, w, h);
+	</script>
+	<script type="text/javascript" src="field.js"></script>
+	<script type="text/javascript" src="painter.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
